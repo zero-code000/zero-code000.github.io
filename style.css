@@ -1,0 +1,152 @@
+    :root {
+        --bg-color: #1a1b26;
+        --text-color: #a9b1d6;
+        --header-color: #7aa2f7;
+        --link-color: #7dcfff;
+        --accent-color: #bb9af3;
+        --code-bg: #24283b;
+        --code-text: #9ece6a;
+        --border-color: #414868;
+        --blockquote-bg: #20243c;
+        --blockquote-border: #f7768e;
+        --scrollbar-thumb: #414868;
+        --scrollbar-bg: #1a1b26;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: var(--scrollbar-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb);
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-color);
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.9;
+        letter-spacing: 0.2px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .article-container {
+        width: 90%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .main-header {
+        text-align: center;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .main-header p {
+        color: var(--header-color);
+        font-family: 'Changa', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h2, h3 {
+        color: var(--header-color);
+        font-family: 'Changa', sans-serif;
+        font-weight: 700;
+        margin-top: 1.8em;
+        margin-bottom: 0.6em;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 0.4em;
+        text-align: right;
+    }
+
+    h2 { font-size: 1.5rem; letter-spacing: 0.5px; }
+    h3 { font-size: 1.25rem; }
+
+    ul {
+        list-style-type: square;
+        padding-right: 25px;
+        margin-bottom: 1.2em;
+        text-align: right;
+    }
+
+    li {
+        margin-bottom: 0.6em;
+        font-weight: 500;
+    }
+
+    /* تنسيق النصوص الإنجليزية بالكامل بمحاذاة اليمين وبأشهر خطوط LazyVim */
+    .en-line {
+        display: inline-block;
+        text-align: right;
+        direction: ltr;
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+        font-weight: 500;
+        font-size: 0.92rem;
+    }
+
+    strong {
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    /* تنسيق كتل الأكواد البرمجية لتطابق ثيم محرر الأكواد النظيف */
+    code {
+        background-color: var(--code-bg);
+        color: var(--code-text);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: 'Fira Code', 'JetBrains Mono', monospace;
+        font-size: 0.88rem;
+        font-weight: 500;
+        direction: ltr;
+        display: inline-block;
+    }
+
+    .spec-tag {
+        color: #e0af68;
+        font-weight: 500;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        margin-right: 8px;
+        direction: ltr;
+        display: inline-block;
+    }
+
+    .back-home {
+        display: inline-block;
+        margin-top: 40px;
+        color: var(--link-color);
+        text-decoration: none;
+        border: 1px solid var(--border-color);
+        padding: 8px 20px;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        text-align: right;
+    }
+
+    .back-home:hover {
+        background-color: var(--code-bg);
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+        .article-container { width: 95%; padding: 20px 10px; }
+        .main-header p { font-size: 1.4rem; }
+        h2 { font-size: 1.3rem; }
+    }

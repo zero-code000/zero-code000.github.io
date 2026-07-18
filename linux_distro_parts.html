@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكونات توزيعة لينكس</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600;700&family=Fira+Code:wght@500;600&family=JetBrains+Mono:ital,wght@0,500;0,600;1,500&family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="article-container">
+        <header class="main-header">
+            <p>مكونات توزيعة لينكس</p>
+        </header>
+
+        <ul>
+            <li><span class="en-line">Bootloader</span>
+                <ul><li>هذا الجزء هو البرنامج المسئول عن تحميل نظام التشغيل من مساحة التخزين (Storage) للذاكرة (Ram) و تشغيله ، و هو اول برنامج يعمل في الجهاز</li></ul>
+            </li>
+            <li><span class="en-line">Kernel</span>
+                <ul><li>هي نواة نظام التشغيل او نظام التشغيل بنفسه ، لان نظام وظيفته الوحيدة هي تشغيل الجهاز ، و هذا ما تقوم به النواة بالفعل</li></ul>
+            </li>
+            <li><span class="en-line">Init System</span>
+                <ul><li>الجزء هو الذي يبدأ العمليات الخلفية مثل برامج الواي فاي و البلوتوث و بيئة سطح المكتب وغيرها</li></ul>
+            </li>
+            <li><span class="en-line">Shell | Terminal</span>
+                <ul><li>هو الجزء الذي يجعل المستخدم قادرا علي التحكم في النظام عن طريق كتابة الأوامر</li></ul>
+            </li>
+            <li><span class="en-line">Display Protocol | Desktop Environment</span>
+                <ul><li>الجزء المسؤول عن عرض الواجهة الرسومية للمستخدم</li></ul>
+            </li>
+            <li><span class="en-line">Firmware Drivers</span>
+                <ul><li>الجزء المسئول عن تعريفات القطع في الجهاز ، بدونها لن يستطيع الحاسب التعرف علي القطع و بالتالي لن تعمل القطع</li></ul>
+            </li>
+            <li><span class="en-line">GNU</span>
+                <ul>
+                    <li>مجموعة من الأدوات و البرامج المفتوحة المصدر الأساسية للتعامل مع النظام و ملفاته ، معظمها يكون في الطرفية (TUI Tools) ، منها :</li>
+                    <li><span class="en-line">ls (list current directory files)</span></li>
+                    <li><span class="en-line">cp ( copy )</span></li>
+                    <li><span class="en-line">mv ( move )</span></li>
+                    <li><span class="en-line">mkdir (make directory)</span></li>
+                    <li><span class="en-line">rm (remove)</span></li>
+                    <li><span class="en-line">cd</span></li>
+                </ul>
+            </li>
+            <li><span class="en-line">Programs Binaries | Libraries | Package Manager</span>
+                <ul>
+                    <li>هذا هو الجزء المسؤول عن تحديث النظام و تحميل البرامج و تحديثها ايضا ، هذا الجزء خصيصا هو الذي يميز توزيعة عن اخري ، فتجد مثلا :</li>
+                    <li>مدير الحزم apt : يكون النظام و البرامج به قديمين من حيث اصدار التحديث ، بسبب انه يتم اختبار التحديثات لضمان التام و عدم حدوث مشاكل ؛ لان التوزيعة تعمل علي ملايين السيرفرات ، فإذا حدث اي خطأ سيتنهار معظم سيرفرات العالم .</li>
+                    <li>مدير الحزم Pacman : مدير حزم تميز و حديث ، بحيث ان النظام و برامجه يكونون دائما علي ادث الاصدارات و الزم ، رغم ان هذه ميزة قوية الا انها احيانا قد تنقلب الا عيب قاتل ؛ بسبب ان بعض التحديثات قد تواجه مشاكل ، ولهذا دائما ما تجد مستخدمي توزيعات عائلة آرش يعرفون كيف يحلون مشاكلهم التقنية ؛ بسبب كثرة التعرض لها</li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="../index.html" class="back-home">→ العودة للصفحة الرئيسية</a>
+    </div>
+</body>
+</html>
